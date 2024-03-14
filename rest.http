@@ -1,0 +1,29 @@
+### Get all staff
+GET http://localhost:3000/staff
+
+### Post staff
+POST http://localhost:3000/staff
+Content-Type: application/json
+
+{
+    "first_name": "Levi",
+    "last_name": "Who",
+    "phone_number": 123
+}
+
+### Get Specific
+GET http://localhost:3000/staff/65f2aa514912a2ff8e79bc1e
+
+### Patch by id
+PATCH http://localhost:3000/staff/65f2a77459c24cc1a2ca340d
+Content-Type: application/json
+
+{
+    "first_name": "Levi",
+    "last_name": "Ackerman",
+    "phone_number": 123
+}
+
+### Delete by id
+DELETE http://localhost:3000/staff/65f2a79d59c24cc1a2ca340f
+
