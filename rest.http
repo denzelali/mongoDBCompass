@@ -1,0 +1,95 @@
+### Get all STAFF
+GET http://localhost:3000/staff
+
+### Get all ROOM
+GET http://localhost:3000/room
+
+### Get all PATIENT
+GET http://localhost:3000/patient
+
+
+### Get all HOSPITAL
+GET http://localhost:3000/hospital
+
+
+### Get all DOCTOR
+GET http://localhost:3000/doctor
+
+
+### Get all DEPARTMENT
+GET http://localhost:3000/department
+
+
+### Post STAFF
+POST http://localhost:3000/staff
+Content-Type: application/json
+
+{
+    "first_name": "RM",
+    "last_name": "qwewe",
+    "phone_number": 9383926318
+}
+
+### Post ROOM
+POST http://localhost:3000/room
+Content-Type: application/json
+
+{
+    "Patient": "Room 101",
+    "Staff": "ME",
+    "Admission_date": "03-03-2023"
+}
+
+### Post PATIENT
+POST http://localhost:3000/patient
+Content-Type: application/json
+
+{
+    "first_name": "Denzel",
+    "last_name": "Aliwate",
+    "phone_number": "123456789",
+    "address": "CDO"
+}
+
+### Post HOSPITAL
+POST http://localhost:3000/hospital
+Content-Type: application/json
+
+{
+    "name": "CUMC",
+    "address": "GUSA",
+    "phone_number": "123456789",
+    "state": "Northern Mindanao",
+    "zip_code": "9000"
+
+}
+
+###  Post DOCTOR
+POST http://localhost:3000/doctor
+Content-Type: application/json
+
+{
+    "first_name":"John",
+    "last_name": "Doe",
+    "specialty": "Psychiatrist",
+}
+
+
+
+
+
+
+### Get Specific
+GET http://localhost:3000/staff/65f2aa514912a2ff8e79bc1e
+
+### Patch by id
+PATCH http://localhost:3000/staff/65f2b108cc7e62f9118655a1
+Content-Type: application/json
+
+{
+    "phone_number": 1
+}
+
+### Delete by id
+DELETE http://localhost:3000/staff/65f2b108cc7e62f9118655a1
+
